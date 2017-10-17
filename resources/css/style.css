@@ -1,0 +1,162 @@
+body{
+	width: 100%;
+	background-color: lightgray;
+}
+
+html * {
+	/*border: 1px solid black;*/
+}
+
+header {
+	background-color: white;
+	height: 64px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header nav {
+	float: right;
+	margin-right: 24px;
+}
+
+.title{
+	margin-left: 24px;
+	display: flex;
+	align-items: center;
+	height: 32px;	
+}
+
+header ul {
+	display: flex;
+}
+
+header li {
+	margin-left: 16px;
+}
+
+.title img {
+	height: 100%;
+}
+
+.jumbotron {
+	display: flex;
+	padding: 32px 24px;
+	background-color: lightgray;
+}
+
+.intro-image {
+	width: 60%;
+	margin-right: 24px;
+}
+
+.intro-image img {
+	width: 100%;
+}
+
+.cta {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 30%;
+}
+
+.cta h2 {
+	color: rgb(60,60,60);
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.cta p {
+	color: rgb(60,60,60);
+	font-size: 1.5rem;
+	padding: 24px 0;
+}
+
+.cta button {
+	width: 100%;
+	padding: 8px;
+	background-color: rgb(60,60,60);
+	color: white;
+	border: none;
+}
+
+.articles {
+	display: flex;
+	width: 100%;
+}
+
+.lead-article {
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+	padding: 32px 24px;
+	width: 60%;
+	height: auto;
+}
+
+.lead-article article {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.lead-article img {
+	width: 100%;
+}
+
+.lead-article h4 {
+	font-size: 3.5rem;
+	margin: 24px 0;
+}
+
+.lead-article small {
+	position: relative;
+	bottom: 0;
+}
+
+.support-articles {
+	background-color: white;
+	width: 40%;
+	padding: 15px 0;
+	border-left: 1px solid lightgray;
+}
+
+.support-articles article{
+	background-color: white;
+  display: flex;
+  align-items: center;
+  border-left: 1px solid white;
+}
+
+.support-articles article:not(:first-child) {
+  border-top: 3px double lightgray;
+}
+
+.support-articles article:last-child {
+	margin-bottom: 16px;
+}
+
+.support-articles img {
+	margin: 16px;
+	width: 35%;
+	height: auto;
+}
+
+.support-articles article:hover {
+	background-color: lightgray;
+	border-left: 1px solid lightgray;
+}
+
+.support-articles article:hover + article {
+  border-top: 3px double white;
+}
+
+.mobile {
+	display: none;
+}
+
+video {
+	width: 60%;
+}

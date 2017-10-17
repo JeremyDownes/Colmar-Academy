@@ -8,15 +8,15 @@
 <body>
   <header>
   	<div class="title">
-  		<img src="ic-resources/images/logo.svg">
+  		<img src="resources/images/ic-logo.svg">
   		<h1>Colmar<span>Academy</span></h1>
   	</div>
   	<nav>
   		<ul>
-  			<li>On Campus</li>
-  			<li>Online</li>
-  			<li>For Companies</li>
-  			<li>Sign In</li>
+  			<li><a href="#">On Campus</a></li>
+  			<li><a href="#">Online</a></li>
+  			<li><a href="#">For Companies</a></li>
+  			<li><a href="#">Sign In</a></li>
   		</ul>
   	</nav>
   </header>
@@ -27,7 +27,7 @@
   			<img src="resources/images/banner.jpg" alt="A birds eye veiw of group of students seated at a table outside and engaged in study">
   		</div>
   		<div class="cta">
-  			<h2<
+  			<h2>Learn Something New Everyday</h2>
   			<p>Learning is a lifelong pursuit of personal growth and greater self-actualization</p>
   			<button>Start Here</button>
   		</div>
@@ -36,35 +36,41 @@
   	<section class="articles">
   		<div class="lead-article">
   		  <article>
-  		  	<img src="resources/images/information-main.jpg">
-  		  	<h4>It Doesn't hurt to keep practicing</h4>
-  		  	<blockquote>
-  		  		"Practice might not make perfect but it will refine your skills and develop your technique..."
-  		  		<cite>Emanuel, Sr Strategist at Hiring.com</cite>
-  		  	</blockquote>
+  		  	<figure>
+  		  	  <img src="resources/images/information-main.jpg">
+  		  	  <h4>It doesn't hurt to keep practicing</h4>
+  		  	</figure>
+  		  	<blockquote>"Practice might not make perfect but it will refine your skills and develop your technique. A skill unpracticed is a skill relinquished. Frequent targeted practice is essential to maintain high level performance in any discipline. Mastery can only be acheived through the persistance of practice."</blockquote>
+ 		  		<small>Emanuel, Sr Strategist at Hiring.com</small>
   		  </article>
   		</div>
   		<div class="support-articles">
     		<article>
   			  <img src="resources/images/information-orientation.jpg" class="full-size">
   			  <img src="resources/images/information-orientation-mobile.jpg" class="mobile">
-  			  <h5>Orientation Date</h5>
-  			  <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-  			  <a href="#">Read more</a>
+  			  <div>
+  			    <h5>Orientation Date</h5>
+  			    <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+  			    <a href="#">Read more</a>
+  			  </div>
     		</article>
     		<article>
   				<img src="resources/images/information-campus.jpg" class="full-size">
   				<img src="resources/images/information-campus-mobile.jpg" class="mobile">
-  				<h5>Our Campus</h5>
-  				<p>Find out which campus is close to you</p>
-  				<a href="#">Read more</a>
+  				<div>
+    				<h5>Our Campus</h5>
+    				<p>Find out which campus is close to you</p>
+  	  			<a href="#">Read more</a>
+  	  		</div>
     		</article>
     		<article>
   			  <img src="resources/images/information-guest-lecture.jpg" class="full-size">
   			  <img src="resources/images/information-guest-lecture-mobile.jpg" class="mobile">
-  			  <h5>Guest Lecture</h5>
-  			  <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-  			  <a href="#">Read more</a>
+  			  <div>
+    			  <h5>Guest Lecture</h5>
+    			  <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+  	  		  <a href="#">Read more</a>
+  	  		</div>
     		</article>
     	</div>
   	</section>
@@ -112,7 +118,7 @@
   		<div class="lead-article">
   			<article>
     			<video>
-    				<source src="resources/videos/thesis.mp4" type="video/mp4">
+    				<source src="resources/videos/thesis.mp4" type="video/mp4" controls>
     				Thesis introduction video.	
     			</video>
     			<h5>Reimagine Urban</h5>
