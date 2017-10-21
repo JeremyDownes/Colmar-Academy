@@ -1,11 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,500|Montserrat:400,500,600,700');
+
 body{
 	width: 100%;
 	background-color: lightgray;
+	font-family: Montserrat;
+	line-height: 2.5vw;
 }
 
-html * {
-	/*border: 1px solid black;*/
+html { 
+	font-size: 1.25vw;
 }
+
 
 header {
 	background-color: white;
@@ -14,12 +20,17 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	margin-bottom: 64px;
 }
 
-header nav {
+nav {
 	float: right;
 	margin-right: 24px;
 }
+
 
 .title{
 	margin-left: 24px;
@@ -28,16 +39,41 @@ header nav {
 	height: 32px;	
 }
 
-header ul {
-	display: flex;
-}
 
-header li {
+li {
+	display: inline;
 	margin-left: 16px;
 }
 
 .title img {
 	height: 100%;
+}
+
+.title * {
+	font-family: Cabin;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+
+
+header a{
+	color: rgb(60,60,60);
+	font-weight: 500;
+	font-family: Cabin;
+	font-size: 1.25vw;
+}
+
+header span {
+	color: lightgray;
+}
+
+main {
+	color: rgb(80,80,80);
+	margin-top: 64px;
 }
 
 .jumbotron {
@@ -64,18 +100,21 @@ header li {
 
 .cta h2 {
 	color: rgb(60,60,60);
-	font-size: 3rem;
+	font-size: 3vw;
 	font-weight: bold;
+	line-height: 3.75vw;
 }
 
 .cta p {
 	color: rgb(60,60,60);
 	font-size: 1.5rem;
 	padding: 24px 0;
+	font-weight: 500;
+	line-height: 3vw;
 }
 
 .cta button {
-	width: 100%;
+	width: 90%;
 	padding: 8px;
 	background-color: rgb(60,60,60);
 	color: white;
@@ -83,6 +122,7 @@ header li {
 }
 
 .articles {
+	background-color: rgb(245,245,245);
 	display: flex;
 	width: 100%;
 }
@@ -90,7 +130,6 @@ header li {
 .lead-article {
 	display: flex;
 	justify-content: space-between;
-	background-color: white;
 	padding: 32px 24px;
 	width: 60%;
 	height: auto;
@@ -106,28 +145,38 @@ header li {
 	width: 100%;
 }
 
-.lead-article h4 {
-	font-size: 3.5rem;
+h4 {
+	letter-spacing: -0.03vw;
+	font-size: 3vw;
+	font-weight: 600;
 	margin: 24px 0;
 }
 
-.lead-article small {
-	position: relative;
-	bottom: 0;
+h5 {
+	font-size: 2vw;
+	font-weight: 500;
+	margin-bottom: 8px;
 }
 
+.lead-article small {
+	margin-top: 32px;
+	position: relative;
+	bottom: 0;
+	font-size: 1vw;
+	font-weight: 500;
+}
+
+
 .support-articles {
-	background-color: white;
 	width: 40%;
 	padding: 15px 0;
 	border-left: 1px solid lightgray;
 }
 
 .support-articles article{
-	background-color: white;
   display: flex;
   align-items: center;
-  border-left: 1px solid white;
+  border-left: 1px solid rgb(245,245,245);
 }
 
 .support-articles article:not(:first-child) {
@@ -150,13 +199,114 @@ header li {
 }
 
 .support-articles article:hover + article {
-  border-top: 3px double white;
+  border-top: 3px double rgb(245,245,245);
+}
+
+.support-articles p, a{
+	line-height: 2vw;
+	font-size: 1.25vw;
+}
+
+.support-articles p {
+	margin-top: 8px;
 }
 
 .mobile {
 	display: none;
 }
 
+.courses {
+	background-color: rgb(230,230,230);
+	margin: 0;
+	width: 100%
+}
+
+.courses h4 {
+	padding-top: 32px;
+	text-align: center;
+}
+
+.figures {
+	margin: 32px 72px;
+	display: inline-grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 32px; 
+}
+
+.figures figure {
+  background-color: white;
+}
+
+.figures img {
+	width: 100%;
+}
+
+.courses h5 {
+	font-size: 2vw;
+	margin: 16px 0px 8px 16px;
+}
+
+.courses figcaption {
+	color: gray;
+	font-size: 1.35vw;
+	margin: 0 0px 8px 16px;
+	line-height: 3vw;
+}
+
+.courses p {
+	color: gray;
+	font-size: 1.35vw;
+	margin: 0 16px 24px 16px;
+	line-height: 2vw;
+}
+
+.thesis {
+	background-color: rgb(240,240,240);
+	display: flex;
+}
+
+#thesis h4 {
+	background-color: rgb(240,240,240);
+	text-align: center;
+	margin: 0;
+	padding-top: 32px;
+}
+
+.thesis .support-articles article, .thesis .support-articles article:hover + article, .thesis .support-articles{
+	border-left: none;
+	border-top: none;
+}
+
+.thesis .support-articles article:first-child {
+	margin-top: 16px;
+}
+
 video {
-	width: 60%;
+	width: 100%;
+	border: 2px solid lightgray;
+	object-fit: cover;
+	margin-bottom: 24px;
+}
+
+i {
+	margin: 16px 24px 48px 24px;
+}
+
+i span{
+	font-family: Montserrat;
+	font-size: 1vw;
+}
+
+footer nav {
+	margin-top: 16px;
+}
+
+footer nav a {
+	font-size: 1vw;
+	color: gray;
+}
+
+footer {
+	background-color: rgb(240,240,240);
+	border-top: 2px solid lightgray;
 }
